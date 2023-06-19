@@ -1,5 +1,25 @@
-# Byte-compiled / optimized / DLL files
+*.bundle.*
+dist/
+*.egg-info/
 __pycache__/
+lib/
+test/build/*
+node_modules/
+.pytest_cache/
+.vscode/
+.idea/
+.ipynb_checkpoints/
+npm-debug.log
+package-lock.json
+
+*.tsbuildinfo
+jupyterlab_launcher_shortcuts/labextension
+
+# Created by https://www.gitignore.io/api/python
+# Edit at https://www.gitignore.io/?templates=python
+
+### Python ###
+# Byte-compiled / optimized / DLL files
 *.py[cod]
 *$py.class
 
@@ -14,13 +34,13 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
 var/
 wheels/
-*.egg-info/
+pip-wheel-metadata/
+share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
@@ -38,6 +58,7 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/
+.nox/
 .coverage
 .coverage.*
 .cache
@@ -51,15 +72,6 @@ coverage.xml
 *.mo
 *.pot
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-
-# Flask stuff:
-instance/
-.webassets-cache
-
 # Scrapy stuff:
 .scrapy
 
@@ -68,9 +80,6 @@ docs/_build/
 
 # PyBuilder
 target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
 
 # pyenv
 .python-version
@@ -81,15 +90,6 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -97,8 +97,29 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
 # mkdocs documentation
 /site
 
 # mypy
 .mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# End of https://www.gitignore.io/api/python
+
+# OSX files
+.DS_Store
+
+# envrc
+.envrc
+
+# direnv
+.direnv

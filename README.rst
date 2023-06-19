@@ -17,8 +17,24 @@ For classic Jupyter Notebook, they are added under the 'New' button
 Installation
 ============
 
-The supporting notebook server extension & classic notebook extension
-can be installed with ``pip``.
+This extension is not updated by its original author for a long time.
+Therefore, the best option is to build and install it from source:
+
+.. code:: bash
+
+   pip install .
+
+Upon successfull installation, `@jupyterlab/launcher_shortcuts` should appear in the list:
+
+.. code:: bash
+
+   jupyter labextension list
+   JupyterLab v3.6.4
+   /opt/conda/share/jupyter/labextensions
+        @jupyterlab/launcher_shortcuts v3.0.1 enabled OK (python, jupyterlab_launcher_shortcuts)
+
+Maybe one day the other could have time to make a new release,
+then you should be able to install extension simply by doing:
 
 .. code:: bash
 
