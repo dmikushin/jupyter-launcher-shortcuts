@@ -33,9 +33,9 @@ labext_name = "@jupyterlab/launcher_shortcuts"
 
 data_files_spec = [
     ("share/jupyter/labextensions/%s" % labext_name, str(lab_path), "**"),
-    ("share/jupyter/labextensions/%s" % labext_name, str(HERE), "install.json"),("etc/jupyter/jupyter_server_config.d",
-     "jupyter-config", "jupyterlab_launcher_shortcuts.json"),
-    
+    ("share/jupyter/labextensions/%s" % labext_name, str(HERE), "install.json"),
+    ("etc/jupyter/jupyter_server_config.d", "jupyter-config", "jupyterlab_launcher_shortcuts.json"),
+    ("share/jupyter/nbextensions/%s" % labext_name, str(lab_path), "static/tree.js")
 ]
 
 cmdclass = create_cmdclass("jsdeps",
