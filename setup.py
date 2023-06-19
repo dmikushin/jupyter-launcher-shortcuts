@@ -1,5 +1,5 @@
 """
-jupyterlab_launcher_shortcuts setup
+jupyter_launcher_shortcuts setup
 """
 import json
 from pathlib import Path
@@ -16,7 +16,7 @@ import setuptools
 HERE = Path(__file__).parent.resolve()
 
 # The name of the project
-name = "jupyterlab_launcher_shortcuts"
+name = "jupyter_launcher_shortcuts"
 
 lab_path = (HERE / name / "labextension")
 
@@ -34,7 +34,7 @@ labext_name = "@jupyterlab/launcher_shortcuts"
 data_files_spec = [
     ("share/jupyter/labextensions/%s" % labext_name, str(lab_path), "**"),
     ("share/jupyter/labextensions/%s" % labext_name, str(HERE), "install.json"),
-    ("etc/jupyter/jupyter_server_config.d", "jupyter-config", "jupyterlab_launcher_shortcuts.json"),
+    ("etc/jupyter/jupyter_server_config.d", "jupyter-config", "jupyter_launcher_shortcuts.json"),
     ("share/jupyter/nbextensions/%s" % labext_name, str(lab_path), "static/tree.js")
 ]
 

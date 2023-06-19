@@ -31,7 +31,7 @@ Upon successfull installation, `@jupyterlab/launcher_shortcuts` should appear in
    jupyter labextension list
    JupyterLab v3.6.4
    /opt/conda/share/jupyter/labextensions
-        @jupyterlab/launcher_shortcuts v3.0.1 enabled OK (python, jupyterlab_launcher_shortcuts)
+        @jupyterlab/launcher_shortcuts v3.0.1 enabled OK (python, jupyter_launcher_shortcuts)
 
 Maybe one day the other could have time to make a new release,
 then you should be able to install extension simply by doing:

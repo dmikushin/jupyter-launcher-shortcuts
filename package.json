@@ -44,7 +44,7 @@
     "build:test": "cd test && ./build-tests.sh",
     "clean": "jlpm run clean:lib",
     "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
-    "clean:labextension": "rimraf jupyterlab_launcher_shortcuts/labextension",
+    "clean:labextension": "rimraf jupyter_launcher_shortcuts/labextension",
     "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
     "eslint": "eslint . --ext .ts,.tsx --fix",
     "eslint:check": "eslint . --ext .ts,.tsx",
@@ -95,12 +95,12 @@
           "pip"
         ],
         "base": {
-          "name": "jupyterlab_launcher_shortcuts"
+          "name": "jupyter_launcher_shortcuts"
         }
       }
     },
     "schemaDir": "schema",
-    "outputDir": "jupyterlab_launcher_shortcuts/labextension"
+    "outputDir": "jupyter_launcher_shortcuts/labextension"
   },
   "sideEffects": [
     "style/*.css"

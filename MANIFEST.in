@@ -2,14 +2,14 @@ include LICENSE
 include setupbase.py
 include README.md
 include pyproject.toml
-include jupyter-config/jupyterlab_launcher_shortcuts.json
+include jupyter-config/jupyter_launcher_shortcuts.json
 
 include package.json
 include install.json
 include ts*.json
 include yarn.lock
 
-graft jupyterlab_launcher_shortcuts/labextension
+graft jupyter_launcher_shortcuts/labextension
 
 # Javascript files
 graft src
